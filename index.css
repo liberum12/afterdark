@@ -1,0 +1,29 @@
+@media (max-width: 576px) {
+    .logo-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .contact-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        place-items: center;
+    }
+    .contact-form h2 {
+        font-size: var(--titles);
+    }
+    .contact-form p {
+        font-size: var(--paragraphs);
+    }
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+
+    }
+
+}
+
