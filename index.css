@@ -1,28 +1,62 @@
+/*La idea es empezar con responsive, luego ir escalando hasta monitor de pc/escritorio.*/
+
 @media (max-width: 576px) {
     .logo-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         justify-items: center;
         align-items: center;
+        height: 95vh;
+        width: 100vw;
+    }
+    /*.backg {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    .backg img {
+        filter:blur(5px);
+        -webkit-filter:blur(5px);
+        -moz-filter:blur(5px);
+        -ms-filter:blur(5px);
+        -o-filter:blur(5px);
+    }*/
+    .logo-container h1 {
+        position: absolute;
+        font-family: var(--logoAD);
+        font-size: 5em;
+        margin-bottom: 0.1em;
+        letter-spacing: 0.1em;
+        font-style: italic;
+        transform: rotate(-2deg);
+        color: #fff;
+        text-shadow: var(--pink-fluor) 3px 3px 9px, var(--light-blue) 3px -3px 10px, var(--yellow-fluor) -2px -2px 3px;
+    }
+    .menu-nav {
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        position: absolute;
+        bottom: 3vh;
     }
     .contact-form {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        place-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        color: #fff;
     }
     .contact-form h2 {
         font-size: var(--titles);
+        margin-bottom: 0%;
+        font-weight: var(--bold);
     }
     .contact-form p {
         font-size: var(--paragraphs);
-    }
-    .container-form {
-        display: flex;
-        flex-direction: column;
-        row-gap: 1em;
-
+        margin-top: 0.1em;
+        font-weight: var(--regular);
     }
 
 }

@@ -10,19 +10,35 @@
     <meta name="keywords"  content="boliche, buenos aires, fiesta, party, noche, alcohol, diversion">
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
+    <!-- Font LOGO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@900&display=swap" rel="stylesheet">
+    <!-- Font titles/paragraphs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <style>
+        /*Estos serán los colores y parámetros que más usaré en los archivos css*/
         :root {
             --all-backgrounds: black;
-            --pink-fluor: #e8175d;
-            --light-blue: #3df2e0;
-            --yellow-fluor: #ffeb00;
+            --pink-fluor: #ff0055;
+            --light-blue: #00fff2;
+            --yellow-fluor: #ffea00;
             --titles: 2em;
-            --paragraphs: 1.5em;      
+            --paragraphs: 1.5em;
+            --logoAD: 'Saira Condensed', sans-serif;
+            --bold: 400;
+            --regular:300;       
         }
         /*Elegir alguna font para el body.*/
         body {
-            /*background-color: var(--all-backgrounds);*/
+            background-color: var(--all-backgrounds);
             margin: 0;
+            font-family: 'Saira Condensed', sans-serif;
+        }
+        strong {
+            font-weight: var(--regular);
         }
         
     </style>
@@ -30,8 +46,12 @@
 <body>
     <!-- Cabecera de la página: contiene logo, menu de navegación. -->
     <header class="logo-container">
-        <!-- El logo del negocio debe ir en header con img o en formato svg en formato XML. -->
+        <!-- El logo del negocio debe ir en header con img o en formato svg en formato XML.
         <img src="/" alt="logoAfterdark">
+        -->
+        <!--<div class="backg">
+            <img src="https://i.pinimg.com/564x/ab/a9/d0/aba9d036993b8aa427447e4f6a306915.jpg">
+        </div>-->
         <h1>AFTERDARK</h1>
         <!-- Menú de navegación. -->
         <nav class="menu-nav">
